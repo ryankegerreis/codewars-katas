@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr = [[1, 2], [3, 4, 2]]
+
+    function solve(arr) {
+      console.log("It's starting")
+      console.log(arr.length)
+
+      function getLargeNumber(array) {
+        array.sort(function (a, b) { return a - b })
+        console.log(arr)
+      }
+
+      for (i = 0; i > arr.length; i++) {
+        getLargeNumber(arr[i])
+        console.log(arr[i])
+      }
+      console.log(arr)
+    }
+    solve(arr)
+
+    // var points = [40, 100, 1, 5, 25, 10];
+    // console.log(points.sort(function (a, b) { return a - b }))
+
+
+  </script>
+
+</body>
+
+</html>
